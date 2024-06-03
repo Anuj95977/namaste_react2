@@ -1,0 +1,248 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 4px  black;
+    background-color: rgb(236, 241, 245);
+    padding-bottom: 0;
+    
+}
+.logo{
+    width: 150px;
+    
+}
+.logo:hover{
+    cursor: pointer;
+}
+.navItems ul{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.navItems li{
+    
+    padding: 1rem;
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navItems li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1.6rem;
+}
+.filter{
+    display: flex;
+    margin-top: 4px;
+    padding: 1rem;
+    background-color: rgb(245, 223, 194); 
+    padding-bottom: 20px;
+}
+.filterBtn{
+    padding: 0.25rem;
+}
+.resCard{
+    overflow: hidden;
+    display: flex;
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: #eae5e5;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.952);
+}
+.resCard:hover{
+    cursor: pointer;
+    border: 2px solid black;
+}
+.resCard>h3:hover{
+    text-decoration: underline;
+}
+.resCard>img{
+    width: 178px;
+    height: 167px;
+}
+.resCard>h3{
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+.resCard >h4,h3{
+    padding-left: 1rem;
+}
+.resCard >h4{
+    color: rgb(81, 15, 15);
+}
+.restaurantContainer{
+    height: auto;
+   padding-left: 30px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2rem;
+   background-color: rgb(245, 223, 194);
+}
+.shimmerContainer{
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.shimmerCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 400px;
+    background-color: rgb(199, 199, 224)
+}
+.login{
+    cursor: pointer;
+    border-radius: 10px;
+    height: 50px;
+    margin-top: 10px;
+    padding: 1rem;
+    margin-right: 10px;
+}
+.searchBox{
+    padding: 0.25rem;
+  
+}
+.search>button{
+   
+    outline: none;
+    margin-right: 5px;
+    padding: 0.25rem;
+}
+
+.menuCard{
+    margin-top: 5px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    background-image: radial-gradient(whitesmoke, rgb(244, 238, 238));
+}
+*/
+.nameAndTitle{
+    padding-bottom: 30px;
+    border-radius: 0px 0px 40px 40px;
+}
+.nameAndTitle h1{
+    font-size: x-large;
+    padding-left: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.menuCardTitle{
+    font-size: 1.2rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 2px solid rgb(243, 239, 235);
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.menuTitle img{
+    width: 30px;
+    height: 30px;
+    margin-right: 2px;
+}
+.menuTitle{
+    
+    align-items: center;
+    margin-left: 20px;
+    display: flex;
+    padding-top: 10px;
+}
+.cuisines{
+   
+    margin-top: 10px;
+    margin-left: 20px;
+    text-decoration: underline;
+    color: orangered;
+    font-size: 1rem;
+}
+.cuisines:hover{
+    cursor: pointer;
+}
+.outlet img{
+    width: 60px;
+    height: 70px;
+    margin-right: 0px;
+}
+.outlet{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;
+    align-items: center;
+    font-size: small;
+}
+.outlet h3{
+    padding-top: 10px;
+}
+.outlet span{
+    font-size: medium;
+    font-weight: lighter;
+    margin-left: 10px;
+}
+.recommended{
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    cursor: pointer;
+}
+.recommended:hover.recommended ul{
+    display: block;
+    color: blueviolet;
+}
+.recommended ul{
+    display: none;
+     margin-left: 20px;
+     transform-origin: top center;
+     animation: showMenu 0.5s ease-in-out forwards;
+}
+
+@keyframes showMenu{
+    0%{
+        transform: scaleY(0);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+.recommended li{
+    padding: 10px;
+    list-style-type: none;
+}
+
+.userCard{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(18, 16, 58);
+    width: 40vw;
+    height: auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.userCard h1,h2{
+    padding: 5px 0px;
+   color: whitesmoke;
+   font-size: 30px;
+   font-weight: 100;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ 
